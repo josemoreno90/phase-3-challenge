@@ -1,0 +1,14 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Build a very basic web app to perform basic calculations on numbers supplied in the URL.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Moreno",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
