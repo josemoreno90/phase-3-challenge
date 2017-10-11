@@ -4,11 +4,13 @@
   "description": "Build a very basic web app to perform basic calculations on numbers supplied in the URL.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jose Moreno",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2"
   }
 }
