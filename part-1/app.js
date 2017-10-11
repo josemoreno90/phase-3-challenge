@@ -12,7 +12,14 @@ app.get('/api/supported-operators', function(req, res){
   })
 })
 
-
+//2nd route (GET Request with query string)
+//This route makes GET request and takes a number variable which calculates
+//the square of that variable passed in.
+app.get('/api/square', function(req, res){
+  const number = req.query.number;
+  const numberSquared = number * number;
+  res.send({'result': numberSquared});
+})
 
 
 app.listen(3000, function(){
