@@ -1,0 +1,20 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "description": "Build a small PostgreSQL database for a grocery store, then connect and write queries using Node.js. Same idea as in part 3, but focused on the database side.",
+  "main": "database.js",
+  "scripts": {
+    "start": "dropdb grocery_store; dropdb grocery_store_test;createdb grocery_store; createdb grocery_store_test;psql grocery_store < schema.sql; psql grocery_store < load-data.sql",
+    "test": "database_test.js"
+  },
+  "author": "Jose Moreno",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "pg-promise": "^7.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
