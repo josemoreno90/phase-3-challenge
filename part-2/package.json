@@ -5,7 +5,7 @@
   "main": "database.js",
   "scripts": {
     "start": "dropdb grocery_store; dropdb grocery_store_test;createdb grocery_store; createdb grocery_store_test;psql grocery_store < schema.sql; psql grocery_store < load-data.sql",
-    "test": "database_test.js"
+    "test": "mocha database_test.js"
   },
   "author": "Jose Moreno",
   "license": "ISC",
