@@ -1,3 +1,5 @@
+-- NPM START
+
 ### Requirements
 
 - [x] __10:__ All files are stored under the `part-1/` folder
